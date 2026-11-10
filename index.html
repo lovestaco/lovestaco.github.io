@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>lovestaco · Maneshwar Holla: git-lrc, LiveReview, peektea, EarsUp and more</title>
+<meta name="description" content="Maneshwar Holla (lovestaco) builds developer tools: git-lrc and LiveReview AI code review at Hexmos, plus open-source side projects peektea (terminal file browser), EarsUp (read-aloud Chrome extension), ratatop, bruh, Keep Awake and devto_devdash.">
+<meta name="author" content="Maneshwar Holla">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://lovestaco.github.io/">
+<link rel="alternate" type="text/plain" href="https://lovestaco.github.io/llms.txt" title="llms.txt">
+<link rel="me" href="https://github.com/lovestaco">
+<link rel="me" href="https://dev.to/lovestaco">
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="lovestaco">
+<meta property="og:url" content="https://lovestaco.github.io/">
+<meta property="og:title" content="lovestaco · Maneshwar Holla">
+<meta property="og:description" content="A wall of small, finished developer tools: git-lrc, LiveReview, peektea, EarsUp, ratatop, bruh and more.">
+<meta property="og:image" content="https://lovestaco.github.io/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="lovestaco: a pegboard wall of developer tools by Maneshwar Holla">
+<meta property="profile:username" content="lovestaco">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="lovestaco · Maneshwar Holla">
+<meta name="twitter:description" content="Developer tools by Maneshwar Holla: git-lrc, LiveReview, peektea, EarsUp and more.">
+<meta name="twitter:image" content="https://lovestaco.github.io/img/og.png">
+<meta name="theme-color" content="#1f4a4d">
+<link rel="icon" href="img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://lovestaco.github.io/#person",
+      "name": "Maneshwar Holla",
+      "alternateName": "lovestaco",
+      "url": "https://lovestaco.github.io/",
+      "image": "https://lovestaco.github.io/img/avatar.webp",
+      "description": "Developer who builds small, opinionated developer tools, and AI code review tools at Hexmos.",
+      "worksFor": { "@type": "Organization", "name": "Hexmos", "url": "https://hexmos.com/" },
+      "sameAs": ["https://github.com/lovestaco", "https://dev.to/lovestaco", "https://linktr.ee/maneshwar"]
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://lovestaco.github.io/#page",
+      "url": "https://lovestaco.github.io/",
+      "name": "lovestaco · Maneshwar Holla",
+      "mainEntity": { "@id": "https://lovestaco.github.io/#person" },
+      "hasPart": { "@id": "https://lovestaco.github.io/#projects" }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://lovestaco.github.io/#projects",
+      "name": "Projects by Maneshwar Holla",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "item": { "@type": "SoftwareApplication", "name": "git-lrc", "url": "https://hexmos.com/livereview/git-lrc/", "applicationCategory": "DeveloperApplication", "description": "Free micro AI code reviews that run on git commit and catch broken logic, leaked credentials and silent behaviour changes before code lands.", "sameAs": "https://github.com/HexmosTech/git-lrc", "publisher": { "@type": "Organization", "name": "Hexmos" } } },
+        { "@type": "ListItem", "position": 2, "item": { "@type": "SoftwareApplication", "name": "LiveReview", "url": "https://hexmos.com/livereview/", "applicationCategory": "DeveloperApplication", "description": "Org-wide, risk-aware AI code review with risk scoring, review-priority ranking and a 10-category risk taxonomy; self-hosted or air-gapped.", "publisher": { "@type": "Organization", "name": "Hexmos" } } },
+        { "@type": "ListItem", "position": 3, "item": { "@type": "SoftwareSourceCode", "name": "peektea", "description": "A minimal terminal file browser built with Bubble Tea: vim keys, previews, filtering, sorting, WSL support.", "codeRepository": "https://github.com/lovestaco/peektea", "url": "https://lovestaco.github.io/peektea/", "programmingLanguage": "Go", "license": "https://opensource.org/licenses/MIT", "author": { "@id": "https://lovestaco.github.io/#person" } } },
+        { "@type": "ListItem", "position": 4, "item": { "@type": "SoftwareSourceCode", "name": "EarsUp", "description": "Chrome extension that adds a play button to every heading and reads that section aloud, with the spoken word highlighted. Chrome or Gemini voices.", "codeRepository": "https://github.com/lovestaco/earsup", "url": "https://lovestaco.github.io/earsup/", "programmingLanguage": "TypeScript", "license": "https://opensource.org/licenses/MIT", "author": { "@id": "https://lovestaco.github.io/#person" } } },
+        { "@type": "ListItem", "position": 5, "item": { "@type": "SoftwareSourceCode", "name": "bruh", "description": "Agent skills that rewrite the agent's last message in plain human language.", "codeRepository": "https://github.com/lovestaco/bruh", "author": { "@id": "https://lovestaco.github.io/#person" } } },
+        { "@type": "ListItem", "position": 6, "item": { "@type": "SoftwareSourceCode", "name": "ratatop", "description": "A btop-style system monitor rebuilt in Rust on ratatui (work in progress).", "codeRepository": "https://github.com/lovestaco/ratatop", "programmingLanguage": "Rust", "author": { "@id": "https://lovestaco.github.io/#person" } } },
+        { "@type": "ListItem", "position": 7, "item": { "@type": "SoftwareSourceCode", "name": "Keep Awake", "description": "Windows tray app that stops the machine sleeping, locking or showing Away, with a timer and global hotkeys.", "codeRepository": "https://github.com/lovestaco/keep-screen-awake", "programmingLanguage": "TypeScript", "author": { "@id": "https://lovestaco.github.io/#person" } } },
+        { "@type": "ListItem", "position": 8, "item": { "@type": "SoftwareSourceCode", "name": "devto_devdash", "description": "Terminal dashboard for your dev.to articles: most liked, most viewed and most commented.", "codeRepository": "https://github.com/lovestaco/devto_devdash", "programmingLanguage": "Go", "author": { "@id": "https://lovestaco.github.io/#person" } } }
+      ]
+    }
+  ]
+}
+</script>
+<link rel="preload" href="fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/rubik-mono-one.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face { font-family: "Bricolage Grotesque"; src: url(fonts/bricolage-grotesque.woff2) format("woff2"); font-weight: 200 800; font-display: swap; }
+@font-face { font-family: "Rubik Mono One"; src: url(fonts/rubik-mono-one.woff2) format("woff2"); font-weight: 400; font-display: swap; }
+:root {
+  --board: #1f4a4d;
+  --board-hi: #26585b;
+  --hole: #0c2223;
+  --steel: #c9d0d4;
+  --steel-dk: #6f7a80;
+  --paper: #f4f1e8;
+  --ink: #16191c;
+  --sticker: #ff7a1a;
+  --tape: #121416;
+  --tape-red: #c2272d;
+  --focus: #ffd34d;
+  --pitch: 34px;
+  --font: "Bricolage Grotesque", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --label: "Rubik Mono One", var(--font);
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scrollbar-color: var(--steel-dk) var(--hole); }
+body {
+  margin: 0;
+  color: var(--ink);
+  font: 400 16px/1.5 var(--font);
+  background-color: var(--board);
+  /* drilled holes: dark bore with a lit lower lip, on a fixed pitch */
+  background-image:
+    radial-gradient(circle at 50% 46%, var(--hole) 0 3.6px, rgba(255,255,255,.12) 4.4px, transparent 5.2px),
+    linear-gradient(180deg, var(--board-hi), var(--board) 420px);
+  background-size: var(--pitch) var(--pitch), 100% 100%;
+  background-attachment: local, fixed;
+}
+::selection { background: var(--focus); color: var(--ink); }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 6px; }
+img { display: block; max-width: 100%; }
+
+.wall {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 32px 24px 96px;
+}
+
+/* ---------- label-maker tape ---------- */
+.tape {
+  display: inline-block;
+  font: 400 15px/1 var(--label);
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: #f4f4f4;
+  background: var(--tape);
+  padding: 9px 14px 8px;
+  border-radius: 3px;
+  /* embossed letters: light top edge, dark bottom edge */
+  text-shadow: 0 -1px 0 rgba(255,255,255,.35), 0 1px 0 rgba(0,0,0,.9);
+  box-shadow: 0 2px 4px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.08);
+}
+.tape.red { background: var(--tape-red); }
+.tape.big { font-size: clamp(26px, 5.2vw, 54px); padding: .32em .5em .26em; letter-spacing: .12em; margin: 0; }
+
+/* ---------- header ---------- */
+.intro {
+  display: grid;
+  grid-template-columns: auto minmax(0, 600px) auto;
+  grid-template-areas: "photo title links" "photo note links";
+  justify-content: start;
+  gap: 18px 36px;
+  align-items: start;
+  margin-bottom: 30px;
+}
+.intro .tape.big { grid-area: title; transform: rotate(-1.2deg); justify-self: start; }
+.intro .photo { grid-area: photo; margin: 10px 0 0; }
+.intro .card-note { grid-area: note; }
+.intro .links { grid-area: links; flex-direction: column; align-items: flex-start; margin-top: 0; align-self: end; }
+
+.photo {
+  position: relative;
+  width: 196px;
+  background: #fbfbf8;
+  padding: 10px 10px 40px;
+  transform: rotate(-3deg);
+  box-shadow: 0 10px 18px -8px rgba(0,0,0,.55), 0 2px 3px rgba(0,0,0,.25);
+}
+.photo img { width: 176px; height: 176px; object-fit: cover; }
+.photo figcaption {
+  position: absolute; left: 0; right: 0; bottom: 10px;
+  text-align: center; font-weight: 600; font-size: 14px; color: #3a3f44;
+}
+.pin {
+  position: absolute; top: -10px; left: 50%; width: 22px; height: 22px; margin-left: -11px;
+  filter: drop-shadow(1px 3px 2px rgba(0,0,0,.45));
+}
+
+.card-note {
+  max-width: 600px;
+  background: var(--paper);
+  padding: 22px 26px 22px;
+  transform: rotate(.6deg);
+  box-shadow: 0 10px 18px -8px rgba(0,0,0,.55), 0 2px 3px rgba(0,0,0,.2);
+  /* index-card rules */
+  background-image: linear-gradient(transparent 46px, #e5a3a3 46px, #e5a3a3 47px, transparent 47px),
+    repeating-linear-gradient(transparent 0 27px, #c9dcea 27px 28px);
+  background-position: 0 0, 0 46px;
+  background-repeat: no-repeat, repeat;
+  background-size: 100% 100%, 100% calc(100% - 46px);
+}
+.card-note h1 { margin: 0 0 18px; font-size: 22px; line-height: 1.1; font-weight: 800; letter-spacing: -.01em; }
+.card-note p { margin: 0; font-size: 17px; line-height: 28px; max-width: 46ch; }
+.card-note .sign { margin-top: 10px; font-weight: 600; color: #6b4a1f; }
+
+.links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; padding: 0; list-style: none; }
+.links a {
+  text-decoration: none;
+  display: inline-flex; align-items: center; gap: 8px;
+  transition: transform .2s cubic-bezier(.22,1,.36,1);
+}
+.links a:hover { transform: translateY(-2px); }
+.links svg { width: 15px; height: 15px; fill: currentColor; }
+
+/* ---------- section labels ---------- */
+.section-label { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin: 0 0 22px; }
+.section-label h2 { margin: 0; }
+.section-label p { margin: 0; color: #cfe3df; font-size: 16px; }
+
+/* ---------- the rack ---------- */
+.rack {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 70px 32px;
+  padding-top: 26px;
+  margin: 0 0 88px;
+  list-style: none;
+  padding-left: 0;
+}
+.rack { align-items: start; }
+.rack > li { position: relative; filter: drop-shadow(10px 16px 10px rgba(0,0,0,.42)) drop-shadow(2px 3px 2px rgba(0,0,0,.25)); }
+.rack > li.drop1 { margin-top: 34px; }
+.rack > li.drop2 { margin-top: 68px; }
+.w6 { grid-column: span 6; }
+.w4 { grid-column: span 4; }
+.w5 { grid-column: span 5; }
+.w7 { grid-column: span 7; }
+
+/* steel peg hook, mounted in the board above each pack */
+.peg {
+  position: absolute; z-index: 2; top: -22px; left: 50%;
+  width: 14px; height: 40px; margin-left: -7px; pointer-events: none;
+}
+.peg::before { /* the drilled hole the hook is seated in */
+  content: ""; position: absolute; left: -1px; top: -2px; width: 16px; height: 16px; border-radius: 50%;
+  background: radial-gradient(circle at 50% 40%, #050f10 0 55%, var(--hole) 70%);
+  box-shadow: 0 1px 0 rgba(255,255,255,.18);
+}
+.peg::after { /* rod coming out of the hole, foreshortened toward the viewer */
+  content: ""; position: absolute; left: 3px; top: 3px; width: 8px; height: 36px; border-radius: 4px;
+  background: linear-gradient(90deg, var(--steel-dk), #f1f4f5 45%, var(--steel) 60%, var(--steel-dk));
+  box-shadow: 2px 4px 4px rgba(0,0,0,.35);
+}
+
+/* ---------- blister pack ---------- */
+.pack {
+  --c-bg: #222; --c-ink: #fff; --c-accent: #ffd34d; --c-soft: rgba(255,255,255,.72);
+  position: relative;
+  display: flex; flex-direction: column;
+  color: var(--c-ink);
+  background: var(--c-bg);
+  border-radius: 10px;
+  padding: 34px 22px 20px;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.08);
+  transform-origin: 50% 16px;
+  /* punch the euro slot out of the card so the board shows through */
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='46' height='12'%3E%3Crect width='46' height='12' rx='6'/%3E%3C/svg%3E") 50% 10px / 46px 12px no-repeat, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='46' height='12'%3E%3Crect width='46' height='12' rx='6'/%3E%3C/svg%3E") 50% 10px / 46px 12px no-repeat exclude, linear-gradient(#000 0 0);
+}
+/* fold line under the header card, where the blister meets the backing */
+.pack::before {
+  content: ""; position: absolute; top: 28px; left: 14px; right: 14px; height: 1px;
+  background: rgba(127,127,127,.28);
+}
+.pack-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+li:has(> .sticker:not([hidden])) .pack-head { padding-right: 58px; }
+.pack h3 {
+  margin: 0; font-weight: 800; font-size: clamp(28px, 3.2vw, 40px); line-height: 1; letter-spacing: -.02em;
+  color: var(--c-accent);
+}
+.kind { font-size: 13px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--c-soft); white-space: nowrap; }
+.tagline { margin: 10px 0 16px; font-size: 18px; line-height: 1.35; font-weight: 600; max-width: 40ch; }
+
+/* clear plastic bubble over the product */
+.bubble {
+  position: relative; margin: 0 0 18px; border-radius: 14px; overflow: hidden;
+  background: rgba(255,255,255,.06);
+  box-shadow: 0 8px 14px -8px rgba(0,0,0,.8), inset 0 0 0 1px rgba(255,255,255,.35);
+}
+.bubble img { width: 100%; height: auto; }
+.bubble::after { /* specular highlight on the plastic */
+  content: ""; position: absolute; inset: 0; pointer-events: none; border-radius: inherit;
+  background:
+    linear-gradient(115deg, rgba(255,255,255,.34) 0%, rgba(255,255,255,.08) 22%, transparent 34%),
+    linear-gradient(295deg, rgba(255,255,255,.14) 0%, transparent 18%);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.28), inset 0 -10px 18px -10px rgba(0,0,0,.4);
+}
+.bubble.tall img { max-height: 340px; width: auto; margin: 0 auto; }
+.bubble.pad { padding: 14px; }
+
+.desc { margin: 0 0 16px; color: var(--c-soft); font-size: 16px; max-width: 52ch; }
+.facts { display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 0 0 18px; padding: 0; list-style: none; font-size: 14px; color: var(--c-soft); }
+.facts li::before { content: "•"; margin-right: 8px; opacity: .6; }
+.facts li:first-child::before { content: none; }
+
+.cmd {
+  display: flex; align-items: center; gap: 10px; margin: 0 0 18px;
+  background: rgba(0,0,0,.28); border-radius: 8px; padding: 9px 10px 9px 14px;
+  font: 500 14px/1.3 ui-monospace, "Cascadia Code", Menlo, Consolas, monospace;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.12);
+}
+.cmd code { flex: 1; overflow-x: auto; white-space: nowrap; }
+.copy {
+  flex: none; font: 600 13px/1 var(--font); color: inherit; cursor: pointer;
+  background: rgba(255,255,255,.12); border: 0; border-radius: 6px; padding: 7px 10px;
+}
+.copy:hover { background: rgba(255,255,255,.22); }
+
+.actions { margin-top: auto; display: flex; flex-wrap: wrap; gap: 10px; }
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  text-decoration: none; font-weight: 600; font-size: 15px;
+  padding: 9px 14px; border-radius: 8px;
+  color: var(--c-ink); background: rgba(255,255,255,.1);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.22);
+  transition: background-color .2s, transform .2s cubic-bezier(.22,1,.36,1);
+}
+.btn:hover { background: rgba(255,255,255,.2); transform: translateY(-1px); }
+.btn.primary { background: var(--c-accent); color: var(--c-bg); box-shadow: none; }
+.btn.primary:hover { filter: brightness(1.06); }
+.btn svg { width: 16px; height: 16px; fill: currentColor; flex: none; }
+
+/* round price sticker carries the star count */
+.sticker {
+  position: absolute; z-index: 3; top: -18px; right: -14px;
+  width: 74px; height: 74px; border-radius: 50%;
+  display: grid; place-content: center; text-align: center;
+  background: var(--sticker); color: #1b1006;
+  transform: rotate(9deg);
+  box-shadow: 0 6px 10px -4px rgba(0,0,0,.55), inset 0 -3px 0 rgba(0,0,0,.12);
+  text-decoration: none;
+}
+.sticker b { display: block; font-size: 21px; line-height: 1; font-weight: 800; letter-spacing: -.02em; }
+.sticker span { font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
+
+/* paper hang-tag tied to the hook */
+.hangtag {
+  position: absolute; z-index: 3; top: 100%; right: 34px; margin: 14px 0 0;
+  width: 104px; padding: 14px 10px 10px; text-align: center;
+  background: #efe6cf; color: #2b2213; border-radius: 4px 4px 4px 4px;
+  font-weight: 800; font-size: 13px; line-height: 1.15; letter-spacing: .02em; text-transform: uppercase;
+  transform: rotate(-6deg); transform-origin: 50% -14px;
+  box-shadow: 0 6px 8px -4px rgba(0,0,0,.5);
+}
+.hangtag::before { /* eyelet */
+  content: ""; position: absolute; top: 5px; left: 50%; width: 7px; height: 7px; margin-left: -3.5px;
+  border-radius: 50%; background: #0a0a0a; box-shadow: 0 0 0 2px #c9b98f;
+}
+.hangtag::after { /* string up to the hook */
+  content: ""; position: absolute; bottom: 100%; left: 50%; width: 1.5px; height: 30px; margin-left: -1px;
+  height: 18px; background: #d9cfb5;
+}
+.hangtag small { display: block; margin-top: 4px; font-weight: 600; font-size: 11px; text-transform: none; letter-spacing: 0; color: #5b4a2c; }
+.sticker[hidden] { display: none; }
+
+/* the swing: a hung pack rocks on its hook and settles */
+@keyframes swing {
+  0% { transform: rotate(0); }
+  18% { transform: rotate(2.4deg); }
+  40% { transform: rotate(-1.5deg); }
+  62% { transform: rotate(.8deg); }
+  82% { transform: rotate(-.3deg); }
+  100% { transform: rotate(0); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .rack > li:hover > .pack, .rack > li:focus-within > .pack { animation: swing 1.4s cubic-bezier(.3,.7,.4,1); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .rack > li:hover > .pack, .rack > li:focus-within > .pack { transform: translateY(-2px); }
+}
+
+/* ---------- brand colours, one per project ---------- */
+.p-lrc { --c-bg: #ffffff; --c-ink: #0f172a; --c-accent: #1d4ed8; --c-soft: #475569; }
+.p-lrc .btn { background: #eef2ff; box-shadow: inset 0 0 0 1px #c7d2fe; }
+.p-lrc .btn.primary { background: #1d4ed8; color: #fff; }
+.p-lrc .cmd { background: #f1f5f9; box-shadow: inset 0 0 0 1px #e2e8f0; }
+.p-lrc .copy { background: #e2e8f0; }
+.p-lr { --c-bg: #0b1222; --c-ink: #e6edf8; --c-accent: #60a5fa; --c-soft: #a3b3cc; }
+.p-tea { --c-bg: #03070d; --c-ink: #f8daa4; --c-accent: #9ab65a; --c-soft: #d8c6a1; }
+.p-tea .btn.primary { color: #03070d; }
+.p-ears { --c-bg: #151a26; --c-ink: #eef2fa; --c-accent: #f2b05e; --c-soft: #b4c1d8; }
+.p-rata { --c-bg: #050505; --c-ink: #f2f2f2; --c-accent: #f5b800; --c-soft: #b9b9b9; }
+.p-bruh { --c-bg: #ffffff; --c-ink: #111; --c-accent: #111; --c-soft: #4b4b4b; }
+.p-bruh h3 { font-family: "Rubik Mono One", var(--font); font-weight: 400; letter-spacing: 0; }
+.p-bruh .btn { background: #f1f1f1; box-shadow: inset 0 0 0 1px #d6d6d6; }
+.p-bruh .btn.primary { background: #111; color: #fff; }
+.p-bruh .cmd { background: #f3f3f3; box-shadow: inset 0 0 0 1px #e1e1e1; }
+.p-bruh .copy { background: #e4e4e4; }
+.p-awake { --c-bg: #17191c; --c-ink: #eef1ef; --c-accent: #22c55e; --c-soft: #a9b1ac; }
+.p-awake .btn.primary { color: #06130b; }
+.p-dash { --c-bg: #f5f5f4; --c-ink: #0a0a0a; --c-accent: #0a0a0a; --c-soft: #44403c; }
+.p-dash .btn { background: #e7e5e4; box-shadow: inset 0 0 0 1px #d6d3d1; }
+.p-dash .btn.primary { background: #0a0a0a; color: #fff; }
+
+/* type-only sleeve for a project with no artwork: a printed terminal table */
+.table-art {
+  margin: 0; padding: 16px 16px 14px; border-radius: 10px;
+  background: #0a0a0a; color: #e7e5e4;
+  font: 500 13px/1.6 ui-monospace, "Cascadia Code", Menlo, Consolas, monospace;
+  overflow-x: auto; white-space: pre;
+}
+.art-fig { margin: 0 0 16px; }
+.art-fig figcaption { margin-top: 6px; font-size: 13px; color: var(--c-soft); }
+.table-art b { color: #a3e635; font-weight: 600; }
+
+/* shadow-board outline: the empty hook where the next tool goes */
+.outline {
+  height: 100%; min-height: 260px;
+  display: grid; place-content: center; justify-items: center; gap: 14px; text-align: center;
+  border: 2px dashed rgba(255,255,255,.4); border-radius: 10px;
+  color: #e3f0ed; text-decoration: none; padding: 34px 22px 24px;
+  transition: border-color .2s, background-color .2s;
+}
+.outline:hover { border-color: var(--focus); background: rgba(0,0,0,.12); }
+.outline strong { font-size: 24px; font-weight: 800; letter-spacing: -.01em; }
+.outline span { color: #b9d3cd; max-width: 30ch; }
+
+/* ---------- footer ---------- */
+.end {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px;
+  padding-top: 8px; color: #cfe3df; font-size: 15px;
+}
+.end p { margin: 0; }
+.end a { color: #fff; text-underline-offset: 3px; }
+
+/* ---------- responsive ---------- */
+@media (max-width: 980px) {
+  .w4, .w5, .w6, .w7 { grid-column: span 6; }
+  .intro { grid-template-columns: auto minmax(0, 1fr); grid-template-areas: "photo title" "photo note" "photo links"; }
+  .intro .links { flex-direction: row; flex-wrap: wrap; }
+}
+@media (max-width: 720px) {
+  .wall { padding: 28px 16px 72px; }
+  .intro { grid-template-columns: auto minmax(0, 1fr); grid-template-areas: "title title" "photo links" "note note"; gap: 20px 18px; margin-bottom: 40px; }
+  .intro .tape.big { font-size: clamp(24px, 8vw, 34px); }
+  .intro .photo { margin-top: 6px; width: 120px; padding: 7px 7px 26px; }
+  .photo img { width: 106px; height: 106px; }
+  .photo figcaption { font-size: 12px; bottom: 6px; }
+  .intro .links { align-self: center; gap: 8px; }
+  .intro .links .tape { font-size: 12px; padding: 8px 10px 7px; letter-spacing: .1em; }
+  .rack > li.drop1, .rack > li.drop2 { margin-top: 0; }
+  .rack { gap: 62px 0; }
+  .w4, .w5, .w6, .w7 { grid-column: 1 / -1; }
+  .sticker { right: -6px; width: 64px; height: 64px; }
+  .sticker b { font-size: 18px; }
+  .pack { padding: 34px 18px 18px; }
+  .tagline { font-size: 17px; }
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-gh" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></symbol>
+  <symbol id="i-book" viewBox="0 0 16 16"><path d="M1.5 2.75A1.75 1.75 0 0 1 3.25 1h9.5c.41 0 .75.34.75.75v11.5a.75.75 0 0 1-.75.75H3.5a.5.5 0 0 0 0 1h9.25a.75.75 0 0 1 0 1.5H3.5A2 2 0 0 1 1.5 14.5Zm1.5 9.8c.16-.03.33-.05.5-.05H12V2.5H3.25a.25.25 0 0 0-.25.25Z"/></symbol>
+  <symbol id="i-down" viewBox="0 0 16 16"><path d="M7.25 1.75a.75.75 0 0 1 1.5 0v7.19l2.47-2.47a.75.75 0 1 1 1.06 1.06l-3.75 3.75a.75.75 0 0 1-1.06 0L3.72 7.53a.75.75 0 0 1 1.06-1.06l2.47 2.47ZM2 13.25a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z"/></symbol>
+  <symbol id="i-out" viewBox="0 0 16 16"><path d="M9.75 1.5h4a.75.75 0 0 1 .75.75v4a.75.75 0 0 1-1.5 0V4.06L8.53 8.53a.75.75 0 0 1-1.06-1.06L11.94 3H9.75a.75.75 0 0 1 0-1.5ZM3 4.5a.5.5 0 0 0-.5.5v8c0 .28.22.5.5.5h8a.5.5 0 0 0 .5-.5V9.75a.75.75 0 0 1 1.5 0V13a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.25a.75.75 0 0 1 0 1.5Z"/></symbol>
+  <symbol id="i-dev" viewBox="0 0 16 16"><path d="M1.5 2h13c.83 0 1.5.67 1.5 1.5v9c0 .83-.67 1.5-1.5 1.5h-13C.67 14 0 13.33 0 12.5v-9C0 2.67.67 2 1.5 2Zm2.1 3.3v5.4h1.36c1.47 0 2.04-.97 2.04-2.7 0-1.73-.57-2.7-2.04-2.7Zm1.04.96h.27c.62 0 .85.43.85 1.74 0 1.31-.23 1.74-.85 1.74h-.27Zm3.67-.96v5.4h2.47v-.96H9.35V8.46h1.21v-.96H9.35V6.26h1.43V5.3Zm3.13 0 1.1 5.4h1.04l1.1-5.4h-1.06l-.56 3.27-.56-3.27Z"/></symbol>
+  <symbol id="i-link" viewBox="0 0 16 16"><path d="M7.78 4.47a.75.75 0 0 1 0-1.06l1.06-1.06a3.75 3.75 0 0 1 5.3 5.3L13.08 8.7a.75.75 0 0 1-1.06-1.06l1.06-1.06a2.25 2.25 0 0 0-3.18-3.18L8.84 4.47a.75.75 0 0 1-1.06 0ZM8.22 11.53a.75.75 0 0 1 0 1.06l-1.06 1.06a3.75 3.75 0 0 1-5.3-5.3L2.92 7.3a.75.75 0 0 1 1.06 1.06L2.92 9.42a2.25 2.25 0 0 0 3.18 3.18l1.06-1.06a.75.75 0 0 1 1.06 0Zm1.84-6.65a.75.75 0 0 1 0 1.06L5.94 10.06a.75.75 0 0 1-1.06-1.06L9 4.88a.75.75 0 0 1 1.06 0Z"/></symbol>
+</svg>
+
+<main class="wall">
+
+  <header class="intro">
+    <p class="tape big" aria-hidden="true">lovestaco</p>
+    <figure class="photo">
+      <svg class="pin" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="10" r="8" fill="#c2272d"/><circle cx="9.5" cy="7.5" r="2.6" fill="#ff8a8f" opacity=".75"/><path d="M12 18v5" stroke="#8a9196" stroke-width="2" stroke-linecap="round"/></svg>
+      <img src="img/avatar.webp" alt="Maneshwar Holla holding a small fluffy dog" width="176" height="176">
+      <figcaption>Maneshwar</figcaption>
+    </figure>
+      <div class="card-note">
+        <h1>Hi, I'm Maneshwar Holla.</h1>
+        <p>I build small tools that do one job well, and give each one a personality: a tea-themed file browser, a bunny that reads docs aloud, a system monitor that's cooking. At work I build AI code review at Hexmos.</p>
+        <p class="sign">Step by step, ferociously.</p>
+      </div>
+      <ul class="links">
+        <li><a class="tape" href="https://github.com/lovestaco"><svg aria-hidden="true"><use href="#i-gh"/></svg>GitHub</a></li>
+        <li><a class="tape" href="https://dev.to/lovestaco"><svg aria-hidden="true"><use href="#i-dev"/></svg>dev.to</a></li>
+        <li><a class="tape" href="https://linktr.ee/maneshwar"><svg aria-hidden="true"><use href="#i-link"/></svg>Linktree</a></li>
+      </ul>
+  </header>
+
+  <section aria-labelledby="notable">
+    <div class="section-label">
+      <h2 id="notable" class="tape red">Notable · at Hexmos</h2>
+      <p>What I'm building at work.</p>
+    </div>
+    <ul class="rack">
+      <li class="w6">
+        <span class="peg" aria-hidden="true"></span>
+        <a class="sticker" href="https://github.com/HexmosTech/git-lrc/stargazers" data-repo="HexmosTech/git-lrc" aria-label="Stars on GitHub"><b data-stars>1,489</b><span>stars</span></a>
+        <article class="pack p-lrc">
+          <div class="pack-head"><h3>git-lrc</h3><span class="kind">Go · CLI</span></div>
+          <p class="tagline">Micro AI code reviews that run on <code>git commit</code>.</p>
+          <div class="bubble"><img src="img/git-lrc-og.webp" alt="git-lrc: a few micro reviews a day keeps outages away" width="1200" height="630" loading="lazy"></div>
+          <p class="desc">Hooks into every commit and catches broken logic, leaked credentials, and silent behaviour changes before the code lands. Free and unlimited.</p>
+          <div class="actions">
+            <a class="btn primary" href="https://hexmos.com/livereview/git-lrc/"><svg aria-hidden="true"><use href="#i-out"/></svg>Get git-lrc</a>
+            <a class="btn" href="https://github.com/HexmosTech/git-lrc"><svg aria-hidden="true"><use href="#i-gh"/></svg>Repo</a>
+          </div>
+        </article>
+      </li>
+      <li class="w6 drop1">
+        <span class="peg" aria-hidden="true"></span>
+        <article class="pack p-lr">
+          <div class="pack-head"><h3>LiveReview</h3><span class="kind">Self-hosted</span></div>
+          <p class="tagline">Risk-aware AI code review for the whole org.</p>
+          <div class="bubble"><img src="img/livereview.webp" alt="LiveReview dashboard with a review pipeline chart and issue distribution" width="1600" height="793" loading="lazy"></div>
+          <p class="desc">Risk scoring, review-priority ranking, and a 10-category risk taxonomy, enforced on every commit. Runs self-hosted or air-gapped.</p>
+          <div class="actions">
+            <a class="btn primary" href="https://hexmos.com/livereview/"><svg aria-hidden="true"><use href="#i-out"/></svg>See LiveReview</a>
+          </div>
+        </article>
+      </li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="mine">
+    <div class="section-label">
+      <h2 id="mine" class="tape">Side projects</h2>
+      <p>Made after hours. All open source.</p>
+    </div>
+    <ul class="rack">
+      <li class="w7">
+        <span class="peg" aria-hidden="true"></span>
+        <a class="sticker" href="https://github.com/lovestaco/peektea/stargazers" data-repo="lovestaco/peektea" aria-label="Stars on GitHub"><b data-stars>21</b><span>stars</span></a>
+        <article class="pack p-tea">
+          <div class="pack-head"><h3>peektea</h3><span class="kind">Go · TUI</span></div>
+          <p class="tagline">Peek first. Open later. A terminal file browser.</p>
+          <div class="bubble">
+            <picture>
+              <source srcset="img/peektea.webp" media="(prefers-reduced-motion: reduce)">
+              <img src="img/peektea-demo.gif" alt="peektea browsing folders and previewing files in a terminal" width="1916" height="1022" loading="lazy">
+            </picture>
+          </div>
+          <ul class="facts"><li>Vim keys</li><li>Previews with bat and chafa</li><li>Filter, sort, move, copy</li><li>WSL aware</li></ul>
+          <div class="actions">
+            <a class="btn primary" href="https://lovestaco.github.io/peektea/installation/"><svg aria-hidden="true"><use href="#i-down"/></svg>Install</a>
+            <a class="btn" href="https://lovestaco.github.io/peektea/"><svg aria-hidden="true"><use href="#i-book"/></svg>Docs</a>
+            <a class="btn" href="https://github.com/lovestaco/peektea"><svg aria-hidden="true"><use href="#i-gh"/></svg>Repo</a>
+          </div>
+        </article>
+      </li>
+      <li class="w5 drop2">
+        <span class="peg" aria-hidden="true"></span>
+        <a class="sticker" href="https://github.com/lovestaco/earsup/stargazers" data-repo="lovestaco/earsup" aria-label="Stars on GitHub" hidden><b data-stars>0</b><span>stars</span></a>
+        <article class="pack p-ears">
+          <div class="pack-head"><h3>EarsUp</h3><span class="kind">Chrome ext.</span></div>
+          <p class="tagline">Press play on any heading. Hear that section.</p>
+          <div class="bubble">
+            <picture>
+              <source srcset="img/earsup.webp" media="(prefers-reduced-motion: reduce)">
+              <img src="img/earsup-demo.gif" alt="EarsUp reading a section aloud with the spoken word highlighted" width="880" height="512" loading="lazy">
+            </picture>
+          </div>
+          <ul class="facts"><li>Chrome or Gemini voices</li><li>Follow-along highlight</li><li>History</li></ul>
+          <div class="actions">
+            <a class="btn primary" href="https://github.com/lovestaco/earsup/releases/latest"><svg aria-hidden="true"><use href="#i-down"/></svg>Download</a>
+            <a class="btn" href="https://lovestaco.github.io/earsup/"><svg aria-hidden="true"><use href="#i-book"/></svg>Docs</a>
+            <a class="btn" href="https://github.com/lovestaco/earsup"><svg aria-hidden="true"><use href="#i-gh"/></svg>Repo</a>
+          </div>
+        </article>
+      </li>
+      <li class="w4">
+        <span class="peg" aria-hidden="true"></span>
+        <a class="sticker" href="https://github.com/lovestaco/bruh/stargazers" data-repo="lovestaco/bruh" aria-label="Stars on GitHub"><b data-stars>10</b><span>stars</span></a>
+        <article class="pack p-bruh">
+          <div class="pack-head"><h3>bruh</h3><span class="kind">Agent skill</span></div>
+          <p class="tagline">Tell your agent to stfu and speak properly.</p>
+          <div class="bubble"><img src="img/bruh.webp" alt="Rage-face drawing above the word BRUH" width="1000" height="420" loading="lazy"></div>
+          <p class="desc"><code>bro</code> rewrites the last message in plain human. <code>bruh</code> does the same, but feral.</p>
+          <div class="cmd"><code>npx skills add lovestaco/bruh</code><button class="copy" type="button" data-copy="npx skills add lovestaco/bruh">Copy</button></div>
+          <div class="actions">
+            <a class="btn primary" href="https://github.com/lovestaco/bruh"><svg aria-hidden="true"><use href="#i-gh"/></svg>Repo</a>
+          </div>
+        </article>
+      </li>
+      <li class="w4 drop2">
+        <span class="peg" aria-hidden="true"></span>
+        <p class="hangtag">Work in progress<small>CPU box works</small></p>
+        <article class="pack p-rata">
+          <div class="pack-head"><h3>ratatop</h3><span class="kind">Rust · TUI</span></div>
+          <p class="tagline">Keep an eye on what's cooking in your system.</p>
+          <div class="bubble"><img src="img/ratatop.webp" alt="ratatop logo: a pixel-art rat in a cowboy hat" width="1000" height="420" loading="lazy"></div>
+          <p class="desc">btop, rebuilt in Rust on ratatui. The CPU box works today: per-core braille graphs, load, temperature, battery.</p>
+          <div class="actions">
+            <a class="btn primary" href="https://github.com/lovestaco/ratatop"><svg aria-hidden="true"><use href="#i-gh"/></svg>Repo</a>
+          </div>
+        </article>
+      </li>
+      <li class="w4 drop1">
+        <span class="peg" aria-hidden="true"></span>
+        <a class="sticker" href="https://github.com/lovestaco/keep-screen-awake/stargazers" data-repo="lovestaco/keep-screen-awake" aria-label="Stars on GitHub" hidden><b data-stars>0</b><span>stars</span></a>
+        <article class="pack p-awake">
+          <div class="pack-head"><h3>Keep Awake</h3><span class="kind">Windows</span></div>
+          <p class="tagline">Stops sleep, lock, and "Away" on your chat status.</p>
+          <div class="bubble tall pad"><img src="img/keepawake.webp" alt="Keep Awake window with a timer, nudge settings and hotkeys" width="421" height="898" loading="lazy"></div>
+          <p class="desc">A tray app with a timer from 15 minutes to 8 hours, and <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>K</kbd> from anywhere. No admin rights needed.</p>
+          <div class="actions">
+            <a class="btn primary" href="https://github.com/lovestaco/keep-screen-awake#install"><svg aria-hidden="true"><use href="#i-down"/></svg>Download</a>
+            <a class="btn" href="https://github.com/lovestaco/keep-screen-awake"><svg aria-hidden="true"><use href="#i-gh"/></svg>Repo</a>
+          </div>
+        </article>
+      </li>
+      <li class="w6">
+        <span class="peg" aria-hidden="true"></span>
+        <a class="sticker" href="https://github.com/lovestaco/devto_devdash/stargazers" data-repo="lovestaco/devto_devdash" aria-label="Stars on GitHub"><b data-stars>1</b><span>star</span></a>
+        <article class="pack p-dash">
+          <div class="pack-head"><h3>devto_devdash</h3><span class="kind">Go · Terminal</span></div>
+          <p class="tagline">A terminal dashboard for your dev.to articles.</p>
+          <figure class="art-fig"><pre class="table-art" aria-label="Illustration of the dashboard's three tables: Most Liked, Most Viewed, Most Commented"><b>MOST LIKED</b>          <b>MOST VIEWED</b>         <b>MOST COMMENTED</b>
+Your best article   Your best article   Your best article
+Second favourite    Second favourite    Second favourite
+...                 ...                 ...</pre><figcaption>Illustration of the layout, not real data.</figcaption></figure>
+          <p class="desc">Built on devdash. Pulls every article from the dev.to API and ranks them by likes, views, and comments.</p>
+          <div class="actions">
+            <a class="btn primary" href="https://github.com/lovestaco/devto_devdash"><svg aria-hidden="true"><use href="#i-gh"/></svg>Repo</a>
+          </div>
+        </article>
+      </li>
+      <li class="w6">
+        <span class="peg" aria-hidden="true"></span>
+        <a class="outline" href="https://github.com/lovestaco?tab=repositories">
+          <strong>Next tool goes here</strong>
+          <span>Smaller experiments and works in progress live on GitHub.</span>
+          <span class="tape"><svg aria-hidden="true" width="15" height="15" fill="currentColor" style="vertical-align:-2px;margin-right:8px"><use href="#i-gh"/></svg>More on GitHub</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <footer class="end">
+    <p>Made by Maneshwar Holla, step by step.</p>
+    <p><a href="https://github.com/lovestaco/lovestaco.github.io">Page source</a> · <a href="llms.txt">llms.txt</a></p>
+  </footer>
+</main>
+
+<script>
+// Star counts: start from the numbers in the page, refresh from GitHub when it answers.
+for (const s of document.querySelectorAll('[data-repo]')) {
+  fetch('https://api.github.com/repos/' + s.dataset.repo)
+    .then((r) => (r.ok ? r.json() : null))
+    .then((d) => {
+      if (!d || typeof d.stargazers_count !== 'number') return;
+      const n = d.stargazers_count;
+      s.querySelector('[data-stars]').textContent = n >= 10000 ? (n / 1000).toFixed(0) + 'k' : n.toLocaleString('en');
+      s.querySelector('span').textContent = n === 1 ? 'star' : 'stars';
+      s.hidden = n === 0;
+    })
+    .catch(() => {});
+}
+// Copy buttons
+for (const b of document.querySelectorAll('[data-copy]')) {
+  b.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(b.dataset.copy);
+      b.textContent = 'Copied';
+    } catch {
+      b.textContent = 'Select it';
+    }
+    setTimeout(() => (b.textContent = 'Copy'), 1600);
+  });
+}
+</script>
+</body>
+</html>
