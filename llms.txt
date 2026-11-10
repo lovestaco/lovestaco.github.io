@@ -1,0 +1,22 @@
+# lovestaco (Maneshwar Holla)
+
+> Maneshwar Holla, GitHub handle `lovestaco`, is a developer who builds small, opinionated developer tools. At work he builds AI code review tools at Hexmos (git-lrc and LiveReview). His side projects are open source.
+
+- Home: https://lovestaco.github.io/
+- GitHub: https://github.com/lovestaco
+- dev.to: https://dev.to/lovestaco
+- Links: https://linktr.ee/maneshwar
+
+## Notable (at Hexmos)
+
+- [git-lrc](https://hexmos.com/livereview/git-lrc/): free, micro AI code reviews that run on `git commit`. Catches broken logic, leaked credentials, and silent behaviour changes before code lands. Source: https://github.com/HexmosTech/git-lrc
+- [LiveReview](https://hexmos.com/livereview/): org-wide, risk-aware AI code review with risk scoring, review-priority ranking, and a 10-category risk taxonomy, enforced on every commit. Self-hosted or air-gapped.
+
+## Side projects
+
+- [peektea](https://lovestaco.github.io/peektea/): a minimal terminal file browser built with Bubble Tea (Go). Vim keys, file previews (bat, chafa), filtering, sorting, move and clipboard copy, WSL support. MIT. Repo: https://github.com/lovestaco/peektea
+- [EarsUp](https://lovestaco.github.io/earsup/): a Chrome extension that puts a play button next to every heading and reads that section aloud, highlighting the spoken word. Chrome voices (offline) or Gemini voices (own API key). TypeScript, MIT. Repo: https://github.com/lovestaco/earsup
+- [bruh](https://github.com/lovestaco/bruh): agent skills `bro` and `bruh` that rewrite an AI agent's last message in plain human language. Install: `npx skills add lovestaco/bruh`
+- [ratatop](https://github.com/lovestaco/ratatop): a btop-style system monitor rebuilt in Rust on ratatui. Work in progress; the CPU box works.
+- [Keep Awake](https://github.com/lovestaco/keep-screen-awake): a Windows tray app that stops the machine sleeping, locking, or showing "Away" in chat, with a timer and global hotkeys.
+- [devto_devdash](https://github.com/lovestaco/devto_devdash): a terminal dashboard for your dev.to articles (most liked, viewed, commented), built on devdash (Go).
