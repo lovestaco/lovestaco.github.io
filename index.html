@@ -57,7 +57,7 @@
       "name": "Projects by Maneshwar Holla",
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "item": { "@type": "SoftwareApplication", "name": "git-lrc", "url": "https://hexmos.com/livereview/git-lrc/", "applicationCategory": "DeveloperApplication", "description": "Free micro AI code reviews that run on git commit and catch broken logic, leaked credentials and silent behaviour changes before code lands.", "sameAs": "https://github.com/HexmosTech/git-lrc", "publisher": { "@type": "Organization", "name": "Hexmos" } } },
-        { "@type": "ListItem", "position": 2, "item": { "@type": "SoftwareApplication", "name": "LiveReview", "url": "https://hexmos.com/livereview/", "applicationCategory": "DeveloperApplication", "description": "Org-wide, risk-aware AI code review with risk scoring, review-priority ranking and a 10-category risk taxonomy; self-hosted or air-gapped.", "publisher": { "@type": "Organization", "name": "Hexmos" } } },
+        { "@type": "ListItem", "position": 2, "item": { "@type": "SoftwareApplication", "name": "LiveReview", "url": "https://hexmos.com/livereview/", "sameAs": "https://github.com/HexmosTech/LiveReview", "applicationCategory": "DeveloperApplication", "description": "Org-wide, risk-aware AI code review with risk scoring, review-priority ranking and a 10-category risk taxonomy; self-hosted or air-gapped.", "publisher": { "@type": "Organization", "name": "Hexmos" } } },
         { "@type": "ListItem", "position": 3, "item": { "@type": "SoftwareSourceCode", "name": "peektea", "description": "A minimal terminal file browser built with Bubble Tea: vim keys, previews, filtering, sorting, WSL support.", "codeRepository": "https://github.com/lovestaco/peektea", "url": "https://lovestaco.github.io/peektea/", "programmingLanguage": "Go", "license": "https://opensource.org/licenses/MIT", "author": { "@id": "https://lovestaco.github.io/#person" } } },
         { "@type": "ListItem", "position": 4, "item": { "@type": "SoftwareSourceCode", "name": "EarsUp", "description": "Chrome extension that adds a play button to every heading and reads that section aloud, with the spoken word highlighted. Chrome or Gemini voices.", "codeRepository": "https://github.com/lovestaco/earsup", "url": "https://lovestaco.github.io/earsup/", "programmingLanguage": "TypeScript", "license": "https://opensource.org/licenses/MIT", "author": { "@id": "https://lovestaco.github.io/#person" } } },
         { "@type": "ListItem", "position": 5, "item": { "@type": "SoftwareSourceCode", "name": "bruh", "description": "Agent skills that rewrite the agent's last message in plain human language.", "codeRepository": "https://github.com/lovestaco/bruh", "author": { "@id": "https://lovestaco.github.io/#person" } } },
@@ -253,8 +253,9 @@ img { display: block; max-width: 100%; }
   content: ""; position: absolute; top: 28px; left: 14px; right: 14px; height: 1px;
   background: rgba(127,127,127,.28);
 }
-.pack-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
-li:has(> .sticker:not([hidden])) .pack-head { padding-right: 58px; }
+.pack-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 12px; }
+.pack h3 { white-space: nowrap; }
+li:has(> .sticker) .pack-head { padding-right: 58px; }
 .pack h3 {
   margin: 0; font-weight: 800; font-size: clamp(28px, 3.2vw, 40px); line-height: 1; letter-spacing: -.02em;
   color: var(--c-accent);
@@ -342,7 +343,6 @@ li:has(> .sticker:not([hidden])) .pack-head { padding-right: 58px; }
   background: #d9cfb5;
 }
 .hangtag small { display: block; margin-top: 4px; font-weight: 600; font-size: 11px; text-transform: none; letter-spacing: 0; color: #5b4a2c; }
-.sticker[hidden] { display: none; }
 
 /* the swing: a hung pack rocks on its hook and settles */
 @keyframes swing {
@@ -492,6 +492,7 @@ li:has(> .sticker:not([hidden])) .pack-head { padding-right: 58px; }
       </li>
       <li class="w6 drop1">
         <span class="peg" aria-hidden="true"></span>
+        <a class="sticker" href="https://github.com/HexmosTech/LiveReview/stargazers" data-repo="HexmosTech/LiveReview" aria-label="Stars on GitHub"><b data-stars>129</b><span>stars</span></a>
         <article class="pack p-lr">
           <div class="pack-head"><h3>LiveReview</h3><span class="kind">Self-hosted</span></div>
           <p class="tagline">Risk-aware AI code review for the whole org.</p>
@@ -499,6 +500,7 @@ li:has(> .sticker:not([hidden])) .pack-head { padding-right: 58px; }
           <p class="desc">Risk scoring, review-priority ranking, and a 10-category risk taxonomy, enforced on every commit. Runs self-hosted or air-gapped.</p>
           <div class="actions">
             <a class="btn primary" href="https://hexmos.com/livereview/"><svg aria-hidden="true"><use href="#i-out"/></svg>See LiveReview</a>
+            <a class="btn" href="https://github.com/HexmosTech/LiveReview"><svg aria-hidden="true"><use href="#i-gh"/></svg>Repo</a>
           </div>
         </article>
       </li>
@@ -533,7 +535,7 @@ li:has(> .sticker:not([hidden])) .pack-head { padding-right: 58px; }
       </li>
       <li class="w5 drop2">
         <span class="peg" aria-hidden="true"></span>
-        <a class="sticker" href="https://github.com/lovestaco/earsup/stargazers" data-repo="lovestaco/earsup" aria-label="Stars on GitHub" hidden><b data-stars>0</b><span>stars</span></a>
+        <a class="sticker" href="https://github.com/lovestaco/earsup/stargazers" data-repo="lovestaco/earsup" aria-label="Stars on GitHub"><b data-stars>0</b><span>stars</span></a>
         <article class="pack p-ears">
           <div class="pack-head"><h3>EarsUp</h3><span class="kind">Chrome ext.</span></div>
           <p class="tagline">Press play on any heading. Hear that section.</p>
@@ -568,6 +570,7 @@ li:has(> .sticker:not([hidden])) .pack-head { padding-right: 58px; }
       <li class="w4 drop2">
         <span class="peg" aria-hidden="true"></span>
         <p class="hangtag">Work in progress<small>CPU box works</small></p>
+        <a class="sticker" href="https://github.com/lovestaco/ratatop/stargazers" data-repo="lovestaco/ratatop" aria-label="Stars on GitHub"><b data-stars>2</b><span>stars</span></a>
         <article class="pack p-rata">
           <div class="pack-head"><h3>ratatop</h3><span class="kind">Rust · TUI</span></div>
           <p class="tagline">Keep an eye on what's cooking in your system.</p>
@@ -580,7 +583,7 @@ li:has(> .sticker:not([hidden])) .pack-head { padding-right: 58px; }
       </li>
       <li class="w4 drop1">
         <span class="peg" aria-hidden="true"></span>
-        <a class="sticker" href="https://github.com/lovestaco/keep-screen-awake/stargazers" data-repo="lovestaco/keep-screen-awake" aria-label="Stars on GitHub" hidden><b data-stars>0</b><span>stars</span></a>
+        <a class="sticker" href="https://github.com/lovestaco/keep-screen-awake/stargazers" data-repo="lovestaco/keep-screen-awake" aria-label="Stars on GitHub"><b data-stars>0</b><span>stars</span></a>
         <article class="pack p-awake">
           <div class="pack-head"><h3>Keep Awake</h3><span class="kind">Windows</span></div>
           <p class="tagline">Stops sleep, lock, and "Away" on your chat status.</p>
@@ -626,16 +629,25 @@ Second favourite    Second favourite    Second favourite
 </main>
 
 <script>
-// Star counts: start from the numbers in the page, refresh from GitHub when it answers.
+// Star counts: start from the numbers in the page, then show live counts from GitHub.
+// Cached for 30 minutes so repeat visits stay under GitHub's 60 requests/hour limit.
+const STAR_TTL = 30 * 60 * 1000;
+const readCache = (k) => { try { const c = JSON.parse(localStorage.getItem(k)); return c && Date.now() - c.t < STAR_TTL ? c.n : null; } catch { return null; } };
+const writeCache = (k, n) => { try { localStorage.setItem(k, JSON.stringify({ n, t: Date.now() })); } catch {} };
+const showStars = (s, n) => {
+  s.querySelector('[data-stars]').textContent = n >= 10000 ? Math.round(n / 1000) + 'k' : n.toLocaleString('en');
+  s.querySelector('span').textContent = n === 1 ? 'star' : 'stars';
+};
 for (const s of document.querySelectorAll('[data-repo]')) {
+  const key = 'stars:' + s.dataset.repo;
+  const cached = readCache(key);
+  if (cached !== null) { showStars(s, cached); continue; }
   fetch('https://api.github.com/repos/' + s.dataset.repo)
     .then((r) => (r.ok ? r.json() : null))
     .then((d) => {
       if (!d || typeof d.stargazers_count !== 'number') return;
-      const n = d.stargazers_count;
-      s.querySelector('[data-stars]').textContent = n >= 10000 ? (n / 1000).toFixed(0) + 'k' : n.toLocaleString('en');
-      s.querySelector('span').textContent = n === 1 ? 'star' : 'stars';
-      s.hidden = n === 0;
+      writeCache(key, d.stargazers_count);
+      showStars(s, d.stargazers_count);
     })
     .catch(() => {});
 }

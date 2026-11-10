@@ -10,7 +10,7 @@
 ## Notable (at Hexmos)
 
 - [git-lrc](https://hexmos.com/livereview/git-lrc/): free, micro AI code reviews that run on `git commit`. Catches broken logic, leaked credentials, and silent behaviour changes before code lands. Source: https://github.com/HexmosTech/git-lrc
-- [LiveReview](https://hexmos.com/livereview/): org-wide, risk-aware AI code review with risk scoring, review-priority ranking, and a 10-category risk taxonomy, enforced on every commit. Self-hosted or air-gapped.
+- [LiveReview](https://hexmos.com/livereview/): org-wide, risk-aware AI code review with risk scoring, review-priority ranking, and a 10-category risk taxonomy, enforced on every commit. Self-hosted or air-gapped. Source: https://github.com/HexmosTech/LiveReview
 
 ## Side projects
 
